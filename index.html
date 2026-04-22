@@ -3,33 +3,75 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aakanksha Portfolio</title>
+<title>Aakanksha Kumari | Portfolio</title>
 
 <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     background: #0f172a;
     color: white;
 }
 
-header {
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero */
+.hero {
     text-align: center;
-    padding: 50px;
-    background: #1e293b;
+    padding: 80px 20px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.hero h1 {
+    font-size: 3rem;
 }
 
+.hero p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Sections */
 section {
-    padding: 40px;
-    max-width: 900px;
+    padding: 50px;
+    max-width: 1000px;
     margin: auto;
 }
 
+/* Cards */
 .card {
     background: #1e293b;
     padding: 20px;
@@ -39,12 +81,26 @@ section {
 }
 
 .card:hover {
-    transform: scale(1.03);
+    transform: translateY(-5px);
 }
 
-a {
-    color: #38bdf8;
+/* Project buttons */
+.project-btns a {
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 8px 15px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 5px;
     text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
 }
 </style>
 
@@ -52,47 +108,81 @@ a {
 
 <body>
 
-<header>
-    <h1>Aakanksha Kumari</h1>
-    <p>Aspiring AI & QA Engineer & Python Devloper</p>
-</header>
+<!-- Navbar -->
+<nav>
+    <h3>Aakanksha</h3>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
 
-<section>
+<!-- Hero -->
+<div class="hero">
+    <h1>Hi, I'm Aakanksha 👋</h1>
+    <p>Aspiring AI & QA Engineer & Python Devloper</p>
+    <a href="#" class="btn">https://drive.google.com/file/d/1ljqVXiVLdwzAVBccHMBoxsf5P_wws5tU/view?usp=drive_link</a>
+</div>
+
+<!-- About -->
+<section id="about">
     <h2>👩‍💻 About Me</h2>
     <p>I am passionate about AI, automation,Devloper and software testing. I enjoy solving real-world problems using technology.</p>
 </section>
 
-<section>
+<!-- Skills -->
+<section id="skills">
     <h2>🛠 Skills</h2>
-    <div class="card">Python, SQL , Node.Js</div>
+    <div class="card">Python, SQL, Node.Js</div>
     <div class="card">Machine Learning, Data Analysis,Testing</div>
     <div class="card">UiPath, Excel, Power BI</div>
 </section>
 
-<section>
+<!-- Projects -->
+<section id="projects">
     <h2>🚀 Projects</h2>
+
     <div class="card">
         <h3>AI Chatbot</h3>
-        <p>Built using Python and NLP techniques.</p>
+        <p>Built using Python and NLP.</p>
+        <div class="project-btns">
+            <a href="#">https://github.com/Aakanksha560/chatbot</a>
+        </div>
     </div>
 
     <div class="card">
         <h3>Smart Attendence System</h3>
-        <p>Mark your attendence using unique QR.</p>
+        <p>Mark your attendence using QR.</p>
+        <div class="project-btns">
+            <a href="#">https://github.com/Aakanksha560/smart-attendance-system</a>
+            
+        </div>
     </div>
 
     <div class="card">
-        <h3>SortingFood web testing project</h3>
-        <p>Testing on a real world project</p>
+        <h3>Broken Auth Assignment</h3>
+        <p>Automated tasks .</p>
+        <div class="project-btns">
+            <a href="#">https://github.com/Aakanksha560/broken-auth-assignment</a>
+        </div>
     </div>
+
 </section>
 
-<section>
+<!-- Contact -->
+<section id="contact">
     <h2>📞 Contact</h2>
     <p>Email: aakanksha.bth24@gmail.com</p>
     <p><a href="#">https://www.linkedin.com/in/aakanksha-kumari-b55b17315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app</a></p>
     <p><a href="#">https://github.com/Aakanksha560</a></p>
 </section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Aakanksha Kumari</p>
+</footer>
 
 </body>
 </html>
